@@ -1,26 +1,31 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind components;
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+@layer base {
   body {
-    color: white;
-    background: black;
+    @apply bg-cwhite text-black;
   }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .board {
+    box-shadow: 20px 10px 38px 3px rgba(0, 0, 0, 0.53);
+    -webkit-box-shadow: 20px 10px 38px 3px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 20px 10px 38px 3px rgba(0, 0, 0, 0.53);
+  }
+
+  .pictureshadow {
+    box-shadow: -17px -1px 42px -5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -17px -1px 42px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -17px -1px 42px -5px rgba(0, 0, 0, 0.75);
+  }
+  /* ... */
 }
