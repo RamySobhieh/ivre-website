@@ -110,9 +110,8 @@ function Gallery() {
                 id="svideo"
                 src="/assets/reelac.mp4"
                 type="video/mp4"
-                muted
                 loop
-                className="sm:grayscale hover:grayscale-0 clip bg-black"
+                className="bg-black sm:hidden"
                 width={236}
               ></video>
             ) : (
@@ -122,7 +121,7 @@ function Gallery() {
                 type="video/mp4"
                 muted
                 loop
-                className="sm:grayscale hover:grayscale-0 clip"
+                className="grayscale hover:grayscale-0 clip hidden sm:block"
                 width={270}
               ></video>
             )}
@@ -135,7 +134,6 @@ function Gallery() {
                 autoPlay
                 src="/assets/reelb.mp4"
                 type="video/mp4"
-                muted
                 loop
                 className="sm:grayscale hover:grayscale-0 clip bg-beige"
                 width={236}
@@ -159,7 +157,6 @@ function Gallery() {
                 id="svideo"
                 src="/assets/reelc.mp4"
                 type="video/mp4"
-                muted
                 loop
                 className="sm:grayscale hover:grayscale-0 clip"
                 width={236}
