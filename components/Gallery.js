@@ -3,43 +3,89 @@ import { useEffect, useState } from "react";
 function Gallery() {
   const size = useWindowSize();
 
+  // useEffect(() => {
+  //   const videos = document.querySelectorAll("video");
+  //   console.log(size.width);
+  //   if (size.width < 640) {
+  //     videos.forEach((video) => {
+  //       // We can only control playback without insteraction if video is mute
+  //       video.muted = true;
+  //       // Play is a promise so we need to check we have it
+  //       let playPromise = video.play();
+  //       if (playPromise !== undefined) {
+  //         playPromise.then((_) => {
+  //           let observer = new IntersectionObserver(
+  //             (entries) => {
+  //               entries.forEach((entry) => {
+  //                 if (entry.intersectionRatio !== 1 && !video.paused) {
+  //                   video.pause();
+  //                 } else if (video.paused) {
+  //                   video.play();
+  //                 }
+  //               });
+  //             },
+  //             { threshold: 1 }
+  //           );
+  //           observer.observe(video);
+  //         });
+  //       }
+  //     });
+  //   } else {
+  //     for (let i = 0; i < videos.length; i++) {
+  //       videos[i].addEventListener("mouseenter", function (e) {
+  //         videos[i].play();
+  //       });
+  //       videos[i].addEventListener("mouseout", function (e) {
+  //         videos[i].pause();
+  //       });
+  //     }
+  //   }
+  // }, [size.width]);
+
   useEffect(() => {
-    const videos = document.querySelectorAll("video");
-    if (size.width < 640) {
-      videos.forEach((video) => {
-        // We can only control playback without insteraction if video is mute
-        video.muted = true;
-        // Play is a promise so we need to check we have it
-        let playPromise = video.play();
-        if (playPromise !== undefined) {
-          playPromise.then((_) => {
-            let observer = new IntersectionObserver(
-              (entries) => {
-                entries.forEach((entry) => {
-                  if (entry.intersectionRatio !== 1 && !video.paused) {
-                    video.pause();
-                  } else if (video.paused) {
-                    video.play();
-                  }
-                });
-              },
-              { threshold: 1 }
-            );
-            observer.observe(video);
-          });
-        }
-      });
-    } else {
-      for (let i = 0; i < videos.length; i++) {
-        videos[i].addEventListener("mouseenter", function (e) {
-          videos[i].play();
-        });
-        videos[i].addEventListener("mouseout", function (e) {
-          videos[i].pause();
+    const svideos = document.querySelectorAll("#svideo");
+
+    svideos.forEach((svideo) => {
+      // We can only control playback without insteraction if video is mute
+      svideo.muted = true;
+      // Play is a promise so we need to check we have it
+      let playPromise = svideo.play();
+      if (playPromise !== undefined) {
+        playPromise.then((_) => {
+          let observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.intersectionRatio !== 1 && !svideo.paused) {
+                  svideo.pause();
+                } else if (svideo.paused) {
+                  svideo.play();
+                }
+              });
+            },
+            { threshold: 1 }
+          );
+          observer.observe(svideo);
         });
       }
+    });
+  });
+
+  useEffect(() => {
+    const bvideos = document.querySelectorAll("#bvideo");
+
+    console.log(size.width);
+
+    for (let i = 0; i < bvideos.length; i++) {
+      bvideos[i].addEventListener("mouseenter", function (e) {
+        if (size.width < 640) return;
+        else bvideos[i].play();
+      });
+      bvideos[i].addEventListener("mouseout", function (e) {
+        if (size.width < 640) return;
+        else bvideos[i].pause();
+      });
     }
-  }, [size.width]);
+  });
 
   return (
     <div
@@ -61,17 +107,17 @@ function Gallery() {
           <div className="border-[2px] bg-black border-beige md:board snap-center snap-always">
             {size.width < 640 ? (
               <video
-                autoPlay
-                src="/assets/reela.mp4"
+                id="svideo"
+                src="/assets/reelac.mp4"
                 type="video/mp4"
                 muted
                 loop
-                className="sm:grayscale hover:grayscale-0 clip"
+                className="sm:grayscale hover:grayscale-0 clip bg-black"
                 width={236}
               ></video>
             ) : (
               <video
-                autoPlay
+                id="bvideo"
                 src="/assets/reela.mp4"
                 type="video/mp4"
                 muted
@@ -85,17 +131,18 @@ function Gallery() {
           <div className="border-[2px] bg-black border-beige md:board snap-center snap-always">
             {size.width < 640 ? (
               <video
+                id="svideo"
                 autoPlay
                 src="/assets/reelb.mp4"
                 type="video/mp4"
                 muted
                 loop
-                className="sm:grayscale hover:grayscale-0 clip"
+                className="sm:grayscale hover:grayscale-0 clip bg-beige"
                 width={236}
               ></video>
             ) : (
               <video
-                autoPlay
+                id="bvideo"
                 src="/assets/reelb.mp4"
                 type="video/mp4"
                 muted
@@ -109,7 +156,7 @@ function Gallery() {
           <div className="border-[2px] bg-black border-beige md:board snap-center snap-always">
             {size.width < 640 ? (
               <video
-                autoPlay
+                id="svideo"
                 src="/assets/reelc.mp4"
                 type="video/mp4"
                 muted
@@ -119,7 +166,7 @@ function Gallery() {
               ></video>
             ) : (
               <video
-                autoPlay
+                id="bvideo"
                 src="/assets/reelc.mp4"
                 type="video/mp4"
                 muted
