@@ -108,10 +108,14 @@ function Gallery() {
             {size.width < 640 ? (
               <video
                 id="svideo"
-                src="/assets/reelac.mp4"
+                src="/assets/reela.mp4"
                 type="video/mp4"
+                preload="metadata"
+                muted
+                playsinline
+                autoplay
                 loop
-                className="bg-black sm:hidden"
+                className="bg-black"
                 width={236}
               ></video>
             ) : (
@@ -121,7 +125,7 @@ function Gallery() {
                 type="video/mp4"
                 muted
                 loop
-                className="grayscale hover:grayscale-0 clip hidden sm:block"
+                className="grayscale hover:grayscale-0"
                 width={270}
               ></video>
             )}
@@ -131,11 +135,12 @@ function Gallery() {
             {size.width < 640 ? (
               <video
                 id="svideo"
-                autoPlay
+                preload="metadata"
+                muted
                 src="/assets/reelb.mp4"
                 type="video/mp4"
                 loop
-                className="sm:grayscale hover:grayscale-0 clip bg-beige"
+                className=" bg-beige"
                 width={236}
               ></video>
             ) : (
@@ -145,7 +150,7 @@ function Gallery() {
                 type="video/mp4"
                 muted
                 loop
-                className="sm:grayscale hover:grayscale-0 clip"
+                className="grayscale hover:grayscale-0"
                 width={270}
               ></video>
             )}
@@ -158,7 +163,7 @@ function Gallery() {
                 src="/assets/reelc.mp4"
                 type="video/mp4"
                 loop
-                className="sm:grayscale hover:grayscale-0 clip"
+                className="bg-black"
                 width={236}
               ></video>
             ) : (
@@ -168,7 +173,7 @@ function Gallery() {
                 type="video/mp4"
                 muted
                 loop
-                className="sm:grayscale hover:grayscale-0 clip"
+                className="grayscale hover:grayscale-0"
                 width={270}
               ></video>
             )}
