@@ -81,10 +81,10 @@ function Footer() {
     ) {
       emailjs
         .sendForm(
-          "service_17x8zy8",
-          "template_akrky19",
+          "service_sfovtbc",
+          "template_p3s62ij",
           form.current,
-          "Dh-dVm7vrw6GglUjR"
+          "FWVAGeO2yDUxUQd4R"
         )
         .then(
           (result) => {
@@ -171,7 +171,7 @@ function Footer() {
           </div>
           <div className="translate-y-[-80px] flex flex-row justify-center space-x-4 tracking-wide text-white/[0.6] hover:text-white lg:pl-[50px] text-lg font-semibold">
             <BsTelephone className="w-[25px] h-[25px]" />
-            <p className="">+961 70-616764</p>
+            <p className="">+961 71-699860</p>
           </div>
           <div className="translate-y-[-80px] flex flex-row justify-center space-x-4 tracking-wide text-white/[0.6] hover:text-white lg:pl-[50px] text-lg font-semibold">
             <MdAlternateEmail className="w-[25px] h-[25px]" />

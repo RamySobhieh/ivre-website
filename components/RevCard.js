@@ -41,9 +41,9 @@ function RevCard() {
           <a href="https://link.totersapp.com/GYJvT4WCvc4HAaK8A">
             <button
               type="button"
-              className=" text-black border-2 border-darkbeige hover:bg-darkbeige hover:text-[#ffffff] focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold text-lg px-5 py-2.5 text-center ease-in duration-150 h-full w-full uppercase"
+              className=" text-black border-2 border-darkbeige hover:bg-darkbeige hover:text-[#ffffff] focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold text-m px-5 py-2.5 text-center ease-in duration-150 h-full w-full uppercase"
             >
-              About Us
+              Order Now
             </button>
           </a>
         </div>

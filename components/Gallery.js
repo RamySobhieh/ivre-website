@@ -62,6 +62,7 @@ function Gallery() {
             {size.width < 640 ? (
               <video
                 src="/assets/reela.mp4"
+                controls="true"
                 type="video/mp4"
                 muted
                 loop
@@ -71,6 +72,7 @@ function Gallery() {
             ) : (
               <video
                 src="/assets/reela.mp4"
+                controls="true"
                 type="video/mp4"
                 muted
                 loop
@@ -85,6 +87,7 @@ function Gallery() {
               <video
                 src="/assets/reelb.mp4"
                 type="video/mp4"
+                controls="true"
                 muted
                 loop
                 className="sm:grayscale hover:grayscale-0 clip"
