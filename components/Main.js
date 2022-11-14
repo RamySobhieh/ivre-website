@@ -17,7 +17,7 @@ function Main() {
   // }, []);
 
   return (
-    <div id="home" className="w-full h-screen herobgfixed z-10 relative">
+    <div id="home" className="w-full h-screen herobg z-10 relative">
       <div className="absolute left:0 top:0 w-full h-screen bg-black/[0.4]"></div>
       <div className="max-w-[1240px] w-full h-full mx-auto p-4 relative">
         <div className="flex flex-col space-y-8 absolute top-[360px] max-w-[700px] text-start w-[50%]">
