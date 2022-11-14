@@ -3,89 +3,50 @@ import { useEffect, useState } from "react";
 function Gallery() {
   const size = useWindowSize();
 
-  // useEffect(() => {
-  //   const videos = document.querySelectorAll("video");
-  //   console.log(size.width);
-  //   if (size.width < 640) {
-  //     videos.forEach((video) => {
-  //       // We can only control playback without insteraction if video is mute
-  //       video.muted = true;
-  //       // Play is a promise so we need to check we have it
-  //       let playPromise = video.play();
-  //       if (playPromise !== undefined) {
-  //         playPromise.then((_) => {
-  //           let observer = new IntersectionObserver(
-  //             (entries) => {
-  //               entries.forEach((entry) => {
-  //                 if (entry.intersectionRatio !== 1 && !video.paused) {
-  //                   video.pause();
-  //                 } else if (video.paused) {
-  //                   video.play();
-  //                 }
-  //               });
-  //             },
-  //             { threshold: 1 }
-  //           );
-  //           observer.observe(video);
-  //         });
-  //       }
-  //     });
-  //   } else {
-  //     for (let i = 0; i < videos.length; i++) {
-  //       videos[i].addEventListener("mouseenter", function (e) {
-  //         videos[i].play();
-  //       });
-  //       videos[i].addEventListener("mouseout", function (e) {
-  //         videos[i].pause();
-  //       });
-  //     }
-  //   }
-  // }, [size.width]);
-
   useEffect(() => {
     const svideos = document.querySelectorAll("#svideo");
 
-    svideos.forEach((svideo) => {
-      // We can only control playback without insteraction if video is mute
-      svideo.muted = true;
-      // Play is a promise so we need to check we have it
-      let playPromise = svideo.play();
-      if (playPromise !== undefined) {
-        playPromise.then((_) => {
-          let observer = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                if (entry.intersectionRatio !== 1 && !svideo.paused) {
-                  svideo.pause();
-                } else if (svideo.paused) {
-                  svideo.play();
-                }
-              });
-            },
-            { threshold: 1 }
-          );
-          observer.observe(svideo);
-        });
-      }
-    });
-  });
+    if (size.width <= 640) {
+      svideos.forEach((svideo) => {
+        // We can only control playback without insteraction if video is mute
+        svideo.muted = true;
+        // Play is a promise so we need to check we have it
+        let playPromise = svideo.play();
+        if (playPromise !== undefined) {
+          playPromise.then((_) => {
+            let observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.intersectionRatio !== 1 && !svideo.paused) {
+                    svideo.pause();
+                  } else if (svideo.paused) {
+                    svideo.play();
+                  }
+                });
+              },
+              { threshold: 1 }
+            );
+            observer.observe(svideo);
+          });
+        }
+      });
+    } else return;
+  }, [size.width]);
 
   useEffect(() => {
     const bvideos = document.querySelectorAll("#bvideo");
-
-    console.log(size.width);
-
-    for (let i = 0; i < bvideos.length; i++) {
-      bvideos[i].addEventListener("mouseenter", function (e) {
-        if (size.width < 640) return;
-        else bvideos[i].play();
-      });
-      bvideos[i].addEventListener("mouseout", function (e) {
-        if (size.width < 640) return;
-        else bvideos[i].pause();
-      });
-    }
-  });
+    if (size.width > 640) {
+      console.log("ayre bl dene" + size.width);
+      for (let i = 0; i < bvideos.length; i++) {
+        bvideos[i].addEventListener("mouseenter", function (e) {
+          bvideos[i].play();
+        });
+        bvideos[i].addEventListener("mouseout", function (e) {
+          bvideos[i].pause();
+        });
+      }
+    } else return;
+  }, [size.width]);
 
   return (
     <div
@@ -171,7 +132,6 @@ function Gallery() {
                 id="svideo"
                 autoPlay
                 playsInline
-                controls
                 muted
                 loop
                 className="bg-black"
