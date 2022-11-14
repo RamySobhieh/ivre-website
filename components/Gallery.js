@@ -105,77 +105,92 @@ function Gallery() {
 
         <div className="w-full xl:px-10 flex flex-col sm:flex-row justify-between items-center snap-mandatory snap-y md:snap:none overflow-y-scroll md:overflow-visible scrollbar-hide h-[423.55px] md:h-fit">
           <div className="border-[2px] bg-black border-beige md:board snap-center snap-always">
+            {/* video 1 */}
             {size.width < 640 ? (
               <video
                 id="svideo"
-                src="/assets/reela.mp4"
-                type="video/mp4"
                 preload="metadata"
                 muted
-                playsinline
-                autoplay
+                playsInline
+                autoPlay
                 loop
                 className="bg-black"
-                width={236}
-              ></video>
+                width={235}
+              >
+                <source src="/assets/reela.mp4" type="video/mp4"></source>
+              </video>
             ) : (
               <video
                 id="bvideo"
-                src="/assets/reela.mp4"
-                type="video/mp4"
+                autoPlay
+                playsInline
                 muted
                 loop
                 className="grayscale hover:grayscale-0"
                 width={270}
-              ></video>
+              >
+                <source src="/assets/reela.mp4" type="video/mp4"></source>
+              </video>
             )}
           </div>
 
+          {/* video 2 */}
           <div className="border-[2px] bg-black border-beige md:board snap-center snap-always">
             {size.width < 640 ? (
               <video
                 id="svideo"
                 preload="metadata"
+                autoPlay
+                playsInline
                 muted
-                src="/assets/reelb.mp4"
-                type="video/mp4"
                 loop
                 className=" bg-beige"
                 width={236}
-              ></video>
+              >
+                <source src="/assets/reelb.mp4" type="video/mp4"></source>
+              </video>
             ) : (
               <video
                 id="bvideo"
-                src="/assets/reelb.mp4"
-                type="video/mp4"
+                autoPlay
+                playsInline
                 muted
                 loop
                 className="grayscale hover:grayscale-0"
                 width={270}
-              ></video>
+              >
+                <source src="/assets/reelb.mp4" type="video/mp4"></source>
+              </video>
             )}
           </div>
 
+          {/* video 3 */}
           <div className="border-[2px] bg-black border-beige md:board snap-center snap-always">
             {size.width < 640 ? (
               <video
                 id="svideo"
-                src="/assets/reelc.mp4"
-                type="video/mp4"
+                autoPlay
+                playsInline
+                controls
+                muted
                 loop
                 className="bg-black"
                 width={236}
-              ></video>
+              >
+                <source src="/assets/reelc.mp4" type="video/mp4"></source>
+              </video>
             ) : (
               <video
                 id="bvideo"
-                src="/assets/reelc.mp4"
-                type="video/mp4"
+                autoPlay
+                playsInline
                 muted
                 loop
                 className="grayscale hover:grayscale-0"
                 width={270}
-              ></video>
+              >
+                <source src="/assets/reelc.mp4" type="video/mp4"></source>
+              </video>
             )}
           </div>
         </div>
