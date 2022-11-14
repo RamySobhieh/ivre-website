@@ -58,11 +58,11 @@ function Gallery() {
         </p>
 
         <div className="w-full xl:px-10 flex flex-col sm:flex-row justify-between items-center snap-mandatory snap-y md:snap:none overflow-y-scroll md:overflow-visible scrollbar-hide h-[423.55px] md:h-fit">
-          <div className="border-[2px] border-beige md:board snap-center snap-always">
+          <div className="border-[2px] bg-black border-beige md:board snap-center snap-always">
             {size.width < 640 ? (
               <video
+                autoPlay
                 src="/assets/reela.mp4"
-                controls="true"
                 type="video/mp4"
                 muted
                 loop
@@ -71,8 +71,8 @@ function Gallery() {
               ></video>
             ) : (
               <video
+                autoPlay
                 src="/assets/reela.mp4"
-                controls="true"
                 type="video/mp4"
                 muted
                 loop
@@ -82,12 +82,12 @@ function Gallery() {
             )}
           </div>
 
-          <div className="border-[2px] border-beige md:board snap-center snap-always">
+          <div className="border-[2px] bg-black border-beige md:board snap-center snap-always">
             {size.width < 640 ? (
               <video
+                autoPlay
                 src="/assets/reelb.mp4"
                 type="video/mp4"
-                controls="true"
                 muted
                 loop
                 className="sm:grayscale hover:grayscale-0 clip"
@@ -95,6 +95,7 @@ function Gallery() {
               ></video>
             ) : (
               <video
+                autoPlay
                 src="/assets/reelb.mp4"
                 type="video/mp4"
                 muted
@@ -105,9 +106,10 @@ function Gallery() {
             )}
           </div>
 
-          <div className="border-[2px] border-beige md:board snap-center snap-always">
+          <div className="border-[2px] bg-black border-beige md:board snap-center snap-always">
             {size.width < 640 ? (
               <video
+                autoPlay
                 src="/assets/reelc.mp4"
                 type="video/mp4"
                 muted
@@ -117,6 +119,7 @@ function Gallery() {
               ></video>
             ) : (
               <video
+                autoPlay
                 src="/assets/reelc.mp4"
                 type="video/mp4"
                 muted

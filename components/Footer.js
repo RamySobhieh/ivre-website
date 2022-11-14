@@ -185,14 +185,14 @@ function Footer() {
               <Link href="/#home">
                 <li className="py-4 text-sm hover:text-beige">Home</li>
               </Link>
+              <Link href="/#services">
+                <li className="py-4 text-sm hover:text-beige">Services</li>
+              </Link>
+              <Link href="/#gallery">
+                <li className="py-4 text-sm hover:text-beige">Gallery</li>
+              </Link>
               <Link href="/#about">
                 <li className="py-4 text-sm hover:text-beige">About</li>
-              </Link>
-              <Link href="/#skills">
-                <li className="py-4 text-sm hover:text-beige">Skills</li>
-              </Link>
-              <Link href="/#projects">
-                <li className="py-4 text-sm hover:text-beige">Projects</li>
               </Link>
               <Link href="/#contact">
                 <li className="py-4 text-sm hover:text-beige">Contact</li>
