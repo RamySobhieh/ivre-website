@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 function Main() {
   return (
     <div
@@ -12,18 +14,24 @@ function Main() {
               ivre
             </h3>
             <h2 className="mb-[20px] text-cwhite tracking-wide text-3xl md:text-5xl font-semibold animate-[heroanimation_1.2s_.55s_forwards]">
-              On ne peut s'aimer que si l'on est ivre
+              On ne peut s&#39;aimer que si l&#39;on est ivre
             </h2>
           </div>
           <div className="md:h-[80px] md:w-[200px] h-[70px] w-[150px] mr-2 mb-2">
-            <a href="#services">
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
               <button
                 type="button"
                 className="text-cwhite border-2 border-darkbeige hover:bg-darkbeige focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold text-m md:text-lg px-5 py-2.5 text-center mr-2 mb-2 ease-in duration-150 h-full w-full uppercase z-10"
               >
                 About us
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

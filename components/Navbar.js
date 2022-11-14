@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import NavLogo from "../public/assets/Whitelogoword.svg";
+import { Link } from "react-scroll";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
@@ -46,36 +47,76 @@ function Navbar() {
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <li className="ml-10 text-m text-[#ffffff] uppercase">
-              <div className="relative group">
-                <a href="/#home">Home</a>
+              <div className="relative group cursor-pointer">
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  Home
+                </Link>
                 <span className="absolute top-[24px] left-0 h-[2px] w-0 rounded-full bg-darkbeige group-hover:w-full duration-[.2s] ease-in"></span>
               </div>
             </li>
 
             <li className="ml-10 text-m text-[#ffffff] uppercase">
-              <div className="relative group">
-                <a href="/#services">Services</a>
+              <div className="relative group cursor-pointer">
+                <Link
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                >
+                  Services
+                </Link>
                 <span className="absolute top-[24px] left-0 h-[2px] w-0 rounded-full bg-darkbeige group-hover:w-full duration-[.2s] ease-in"></span>
               </div>
             </li>
 
             <li className="ml-10 text-m text-[#ffffff] uppercase">
-              <div className="relative group">
-                <a href="/#gallery">Gallery</a>
+              <div className="relative group cursor-pointer">
+                <Link
+                  to="gallery"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                >
+                  Gallery
+                </Link>
                 <span className="absolute top-[24px] left-0 h-[2px] w-0 rounded-full bg-darkbeige group-hover:w-full duration-[.2s] ease-in"></span>
               </div>
             </li>
 
             <li className="ml-10 text-m text-[#ffffff] uppercase">
-              <div className="relative group">
-                <a href="/#about">About</a>
+              <div className="relative group cursor-pointer">
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  About
+                </Link>
                 <span className="absolute top-[24px] left-0 h-[2px] w-0 rounded-full bg-darkbeige group-hover:w-full duration-[.2s] ease-in"></span>
               </div>
             </li>
 
             <li className="ml-10 text-m text-[#ffffff] uppercase">
-              <div className="relative group">
-                <a href="/#contact">Contact</a>
+              <div className="relative group cursor-pointer">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  Contact
+                </Link>
                 <span className="absolute top-[24px] left-0 h-[2px] w-0 rounded-full bg-darkbeige group-hover:w-full duration-[.2s] ease-in"></span>
               </div>
             </li>
@@ -127,46 +168,76 @@ function Navbar() {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase text-cwhite text-l">
-              <a href="/#home">
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-sm hover:text-beige"
+                  className="py-4 text-sm hover:text-beige cursor-pointer"
                 >
                   Home
                 </li>
-              </a>
-              <a href="/#services">
+              </Link>
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-sm hover:text-beige"
+                  className="py-4 text-sm hover:text-beige cursor-pointer"
                 >
                   Services
                 </li>
-              </a>
-              <a href="/#gallery">
+              </Link>
+              <Link
+                to="gallery"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-sm hover:text-beige"
+                  className="py-4 text-sm hover:text-beige cursor-pointer"
                 >
                   Gallery
                 </li>
-              </a>
-              <a href="/#about">
+              </Link>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-sm hover:text-beige"
+                  className="py-4 text-sm hover:text-beige cursor-pointer"
                 >
                   About
                 </li>
-              </a>
-              <a href="/#contact">
+              </Link>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-75}
+                duration={500}
+              >
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-sm hover:text-beige"
+                  className="py-4 text-sm hover:text-beige cursor-pointer"
                 >
                   Contact
                 </li>
-              </a>
+              </Link>
             </ul>
             <div className="pt-20"></div>
           </div>

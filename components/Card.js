@@ -1,6 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 function Card() {
   const { ref, inView } = useInView({
@@ -43,14 +44,20 @@ function Card() {
           aliquip ex ea commodo consequat.
         </p>
         <div className="h-[60px] w-[150px] mt-8">
-          <a href="#contact">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             <button
               type="button"
               className="text-black border-2 border-darkbeige hover:bg-darkbeige hover:text-[#ffffff] focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold text-lg px-5 py-2.5 text-center ease-in duration-150 h-full w-full uppercase"
             >
-              Contact Us
+              Contact
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
