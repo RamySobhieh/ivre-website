@@ -6,7 +6,6 @@ function Gallery() {
   useEffect(() => {
     const videos = document.querySelectorAll("video");
     if (size.width < 640) {
-      console.log("sabaho");
       videos.forEach((video) => {
         // We can only control playback without insteraction if video is mute
         video.muted = true;
