@@ -26,7 +26,7 @@ function Main() {
               ivre
             </h3>
             <h2 className="mb-[20px] text-cwhite tracking-wide text-2xl md:text-3xl font-semibold animate-[heroanimation_1.2s_.55s_forwards] first-letter:sm md:first-letter:5xl first-letter:bold">
-              "Pouring spirit into the soul"
+              &#34;Pouring spirit into the soul&#34;
             </h2>
           </div>
           <div className="md:h-[80px] md:w-[200px] h-[70px] w-[150px] mr-2 mb-2">
