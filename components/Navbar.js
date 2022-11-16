@@ -168,7 +168,7 @@ function Navbar() {
             </div>
             <div className="border-b border-cwhite/[0.87] my-4">
               <p className="w-[85%] md:w-[90%] py-4 text-cwhite">
-                "Pouring spirit into the soul"
+                &#34;Pouring spirit into the soul&#34;
               </p>
             </div>
           </div>
