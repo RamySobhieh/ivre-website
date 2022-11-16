@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import NavLogo from "../public/assets/Whitelogoword.svg";
 import { Link } from "react-scroll";
+import { BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
@@ -27,6 +29,10 @@ function Navbar() {
     };
     window.addEventListener("scroll", handleNavBg);
   }, []);
+
+  function sendMail() {
+    window.open("mailto:ivre.globals@gmail.com");
+  }
 
   return (
     <div
@@ -162,7 +168,7 @@ function Navbar() {
             </div>
             <div className="border-b border-cwhite/[0.87] my-4">
               <p className="w-[85%] md:w-[90%] py-4 text-cwhite">
-                Alcohol: A drink that makes bad decisions look good
+                "Pouring spirit into the soul"
               </p>
             </div>
           </div>
@@ -239,6 +245,27 @@ function Navbar() {
                 </li>
               </Link>
             </ul>
+
+            <div className="py-8 flex flex-row space-x-[50px] items-center lg:pl-[50px]">
+              <a href="https://www.instagram.com/ivre.lb/">
+                <BsInstagram className="w-[25px] h-[25px] text-cwhite/[0.8] hover:text-[#FE59D7] duration-150 ease-in cursor-pointer" />
+              </a>
+
+              {/* <a>
+              <FaTiktok className="w-[25px] h-[25px] text-cwhite/[0.8] hover:text-[#30E1FF] duration-150 ease-in cursor-pointer" />
+            </a> */}
+
+              <a href="https://api.whatsapp.com/send?phone=96171699860">
+                <BsWhatsapp className="w-[25px] h-[25px] text-cwhite/[0.8] hover:text-[#39D700] duration-150 ease-in cursor-pointer" />
+              </a>
+
+              <a>
+                <AiOutlineMail
+                  onClick={sendMail}
+                  className="w-[25px] h-[25px] text-cwhite/[0.8] hover:text-[#EB4236] duration-150 ease-in cursor-pointer"
+                />
+              </a>
+            </div>
             <div className="pt-20"></div>
           </div>
         </div>

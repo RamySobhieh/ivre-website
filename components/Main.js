@@ -22,11 +22,11 @@ function Main() {
       <div className="max-w-[1240px] w-full h-full mx-auto p-4 relative">
         <div className="flex flex-col space-y-8 absolute top-[360px] max-w-[700px] text-start w-[50%]">
           <div className="">
-            <h3 className="text-cwhite tracking-wider text-2xl md:text-3xl font-semibold uppercase animate-[heroanimation_.75s_.4s_forwards]">
+            <h3 className="text-cwhite tracking-wider text-4xl md:text-5xl font-semibold uppercase animate-[heroanimation_.75s_.4s_forwards]">
               ivre
             </h3>
-            <h2 className="mb-[20px] text-cwhite tracking-wide text-3xl md:text-5xl font-semibold animate-[heroanimation_1.2s_.55s_forwards]">
-              On ne peut s&#39;aimer que si l&#39;on est ivre
+            <h2 className="mb-[20px] text-cwhite tracking-wide text-2xl md:text-3xl font-semibold animate-[heroanimation_1.2s_.55s_forwards] first-letter:sm md:first-letter:5xl first-letter:bold">
+              "Pouring spirit into the soul"
             </h2>
           </div>
           <div className="md:h-[80px] md:w-[200px] h-[70px] w-[150px] mr-2 mb-2">
