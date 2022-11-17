@@ -47,6 +47,7 @@ function Navbar() {
         <Image
           className="text-cwhite translate-y-[-6px]"
           src={NavLogo}
+          alt="logo"
           width={200}
           height={50}
         />
@@ -158,7 +159,7 @@ function Navbar() {
         >
           <div className="scrollbar-hide">
             <div className="flex w-full items-center justify-between">
-              <Image src={NavLogo} width={120} height={50} alt="/" />
+              <Image src={NavLogo} width={120} height={50} alt="logo" />
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-md bg-transparent border-2 border-darkbeige shadow-[#121212] p-3 cursor-pointer hover:bg-darkbeige hover:scale-105 duration-300 ease-in"

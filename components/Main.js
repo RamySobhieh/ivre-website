@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
-
+import Image from "next/image";
+import bgimg from "../public/assets/herobgfixed.png";
 function Main() {
   // useEffect(() => {
   //   const bgmove = getComputedStyle(document.documentElement).getPropertyValue(
@@ -17,7 +18,14 @@ function Main() {
   // }, []);
 
   return (
-    <div id="home" className="w-full h-screen herobg z-10 relative">
+    <div id="home" className="w-full h-screen z-10 relative">
+      <Image
+        src={bgimg}
+        alt="background"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+      ></Image>
       <div className="absolute left:0 top:0 w-full h-screen bg-black/[0.4]"></div>
       <div className="max-w-[1240px] w-full h-full mx-auto p-4 relative">
         <div className="flex flex-col space-y-8 absolute top-[360px] max-w-[700px] text-start w-[50%]">

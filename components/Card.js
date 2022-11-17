@@ -2,6 +2,8 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { Link } from "react-scroll";
+import barimg from "../public/assets/barcatering.png";
+import Image from "next/image";
 
 function Card() {
   const { ref, inView } = useInView({
@@ -30,8 +32,15 @@ function Card() {
     >
       <motion.div
         animate={animation}
-        className="md:h-[340px] md:w-[480px] sm:h-[255px] sm:w-[360px] h-[238px] w-[336px] bg-[url(../public/assets/barcatering.png)] bg-cover bg-no-repeat bg-right-top "
-      ></motion.div>
+        className="md:h-[340px] md:w-[480px] sm:h-[255px] sm:w-[360px] h-[238px] w-[336px] relative"
+      >
+        <Image
+          src={barimg}
+          alt="bar image"
+          layout="fill"
+          objectFit="cover"
+        ></Image>
+      </motion.div>
       <div className="xl:w-[2px] xl:h-[320px] h-[2px] w-[280px] bg-darkbeige rounded-full mt-8 xl:mt-0"></div>
       <div className="flex flex-col xl:h-[340px] md:w-[480px] sm:w-[360px] h-[280px] w-[336px] text-black tracking-wide text-start justify-end pb-2">
         <h2 className="text-2xl md:text-3xl tracking-wider font-extrabold uppercase">

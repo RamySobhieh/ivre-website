@@ -1,6 +1,8 @@
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
+import bottleimg from "../public/assets/bottles.jpg";
+import Image from "next/image";
 
 function RevCard() {
   const { ref, inView } = useInView({
@@ -51,8 +53,15 @@ function RevCard() {
       <div className="xl:w-[2px] xl:h-[320px] h-[2px] w-[280px] bg-darkbeige rounded-full"></div>
       <motion.div
         animate={animation}
-        className="md:h-[340px] md:w-[480px] sm:h-[255px] sm:w-[360px] h-[238px] w-[336px] bg-[url(../public/assets/bottles.jpg)] bg-cover bg-no-repeat bg-right-top"
-      ></motion.div>
+        className="md:h-[340px] md:w-[480px] sm:h-[255px] sm:w-[360px] h-[238px] w-[336px] relative"
+      >
+        <Image
+          src={bottleimg}
+          alt="bar image"
+          layout="fill"
+          objectFit="cover"
+        ></Image>
+      </motion.div>
     </div>
   );
 }
