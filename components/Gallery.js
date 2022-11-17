@@ -78,7 +78,7 @@ function Gallery() {
                 className="bg-black"
                 width={235}
               >
-                <source src="/assets/reela.mp4" type="video/mp4"></source>
+                <source src="/assets/reelc.mp4" type="video/mp4"></source>
               </video>
             ) : (
               <video
@@ -90,7 +90,7 @@ function Gallery() {
                 className="grayscale hover:grayscale-0"
                 width={270}
               >
-                <source src="/assets/reela.mp4" type="video/mp4"></source>
+                <source src="/assets/reelc.mp4" type="video/mp4"></source>
               </video>
             )}
           </div>
@@ -137,7 +137,7 @@ function Gallery() {
                 className="bg-black"
                 width={236}
               >
-                <source src="/assets/reelc.mp4" type="video/mp4"></source>
+                <source src="/assets/reela.mp4" type="video/mp4"></source>
               </video>
             ) : (
               <video
@@ -149,7 +149,7 @@ function Gallery() {
                 className="grayscale hover:grayscale-0"
                 width={270}
               >
-                <source src="/assets/reelc.mp4" type="video/mp4"></source>
+                <source src="/assets/reela.mp4" type="video/mp4"></source>
               </video>
             )}
           </div>
