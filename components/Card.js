@@ -2,7 +2,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { Link } from "react-scroll";
-import barimg from "../public/assets/barcatering.png";
+import barimg from "../public/assets/barcatering.jpeg";
 import Image from "next/image";
 
 function Card() {
@@ -47,10 +47,10 @@ function Card() {
           Bar Catering
         </h2>
         <p className="text-m md:text-l tracking-wide font-semibold max-w-[360px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Ivre Catering is a full-service beverage catering and bartending
+          company equipped to accommodate any type or size event. Ivre is the
+          bartending answer for your private parties, weddings, corporate
+          events, office parties, or celebrations of any kind.
         </p>
         <div className="h-[60px] w-[150px] mt-8">
           <Link

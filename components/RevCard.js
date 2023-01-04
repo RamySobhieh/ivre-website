@@ -34,10 +34,11 @@ function RevCard() {
           Ready To Serve Cocktails
         </h2>
         <p className="text-m md:text-l tracking-wide font-semibold max-w-[360px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Experience love, laughter, and friendship with IVRE. We give you the
+          perfect drinks for the soul. IVRE cocktails presents heaven on earth
+          at any place at any time in Lebanon. You crave it, we own it. A drink
+          for every mood whether it&#34;s a small gathering between friends or a
+          huge party.
         </p>
         <div className="mt-8 h-[60px] w-[150px]">
           <a href="https://link.totersapp.com/GYJvT4WCvc4HAaK8A">

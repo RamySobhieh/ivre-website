@@ -58,10 +58,9 @@ function Gallery() {
           Gallery
         </h1>
         <p className="text-cwhite max-w-[500px] mb-20">
-          Lorem ipsum dolor sit amet. Et quasi quae quo veniam iusto qui
-          consectetur dolorem qui fugit vitae et aliquam unde. Et aperiam
-          perspiciatis sed exercitationem molestias non quas deserunt aut sequi
-          cupiditate non nulla voluptatem.
+          These images showcase some of the events we have had the pleasure of
+          serving, as well as the delicious drinks and impeccable service that
+          we are known for.
         </p>
 
         <div className="w-full xl:px-10 flex flex-col sm:flex-row justify-between items-center snap-mandatory snap-y md:snap:none overflow-y-scroll md:overflow-visible scrollbar-hide h-[423.55px] md:h-fit">

@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import bgimg from "../public/assets/herobgfixed.png";
+import bgimg from "../public/assets/herobgfixed.jpeg";
 function Main() {
   // useEffect(() => {
   //   const bgmove = getComputedStyle(document.documentElement).getPropertyValue(

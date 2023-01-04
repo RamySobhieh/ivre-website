@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Teampic from "../public/assets/team.png";
+import Teampic from "../public/assets/team.jpeg";
 function Team() {
   return (
     <div id="about" className="scroll-mt-[-50px]">
@@ -18,13 +18,17 @@ function Team() {
             What We Believe In
           </h2>
           <p className="text-m first-letter:text-5xl first-letter:font-extrabold first-letter:mr-2 first-letter:float-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+            We understand that hosting an event can be stressful, which is why
+            we strive to make the process as seamless and stress-free as
+            possible. From setup to cleanup, our team is here to take care of
+            everything so you can sit back, relax, and enjoy the festivities. We
+            are a team of skilled mixologists and service professionals
+            dedicated to providing top-notch service and delicious drinks to our
+            clients. Whether you're planning a wedding reception, corporate
+            function, or private party, we have the expertise and resources to
+            make your event a success. Thank you again for considering our
+            company. We look forward to working with you and helping make your
+            event a memorable one.
           </p>
         </div>
       </div>
