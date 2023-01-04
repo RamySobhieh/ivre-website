@@ -37,8 +37,8 @@ function RevCard() {
           Experience love, laughter, and friendship with IVRE. We give you the
           perfect drinks for the soul. IVRE cocktails presents heaven on earth
           at any place at any time in Lebanon. You crave it, we own it. A drink
-          for every mood whether it&#34;s a small gathering between friends or a
-          huge party.
+          for every mood whether it&apos;s a small gathering between friends or
+          a huge party.
         </p>
         <div className="mt-8 h-[60px] w-[150px]">
           <a href="https://link.totersapp.com/GYJvT4WCvc4HAaK8A">

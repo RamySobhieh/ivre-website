@@ -24,7 +24,7 @@ function Team() {
             everything so you can sit back, relax, and enjoy the festivities. We
             are a team of skilled mixologists and service professionals
             dedicated to providing top-notch service and delicious drinks to our
-            clients. Whether you're planning a wedding reception, corporate
+            clients. Whether you&apos;re planning a wedding reception, corporate
             function, or private party, we have the expertise and resources to
             make your event a success. Thank you again for considering our
             company. We look forward to working with you and helping make your
