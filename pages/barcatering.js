@@ -1,5 +1,5 @@
 import Slider from "../components/Slider.js";
-import Navbar from "../components/Navbar.js";
+import Navbar from "../components/Navbar2.js";
 
 function barcatering() {
   const slideswedding = [
@@ -11,7 +11,7 @@ function barcatering() {
 
   const slidesprivate = [
     { url: "https://ivrelb.com/assets/private1.jpeg", title: "private 1" },
-    { url: "https://ivrelb.com/assets/private2.png", title: "private 2" },
+    { url: "https://ivrelb.com/assets/private2.jpeg", title: "private 2" },
     { url: "https://ivrelb.com/assets/private3.JPG", title: "private 3" },
     { url: "https://ivrelb.com/assets/private4.jpg", title: "private 4" },
   ];
@@ -22,33 +22,39 @@ function barcatering() {
       title: "corporate 1",
     },
     {
-      url: "https://ivrelb.com/assets/corporate2.jpg",
+      url: "https://ivrelb.com/assets/corporate2.jpeg",
       title: "corporate 2",
     },
     {
-      url: "https://ivrelb.com/assets/corporate3.jpg",
+      url: "https://ivrelb.com/assets/corporate3.jpeg",
       title: "corporate 3",
     },
     {
-      url: "https://ivrelb.com/assets/corporate4.jpg",
+      url: "https://ivrelb.com/assets/corporate4.jpeg",
       title: "corporate 4",
     },
   ];
 
   return (
     <div className="font-roman">
-      <div className="flex bg-white  min-h-screen min-w-screen font-roman justify-center">
-        <div className="flex flex-col lg:p-24 p-8 max-w-[1340px]">
-          <h1 className="uppercase font-extrabold text-darkbeige tracking-widest text-5xl mb-4">
-            Our Bar-Catering Services
-          </h1>
-          <p className="text-black max-w-[500px] mb-20">
-            These images showcase some of the events we have had the pleasure of
-            serving, as well as the delicious drinks and impeccable service that
-            we are known for.
-          </p>
-          <div className="flex flex-col space-y-[150px]">
-            <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start">
+      <Navbar />
+      <div className="flex bg-cwhite  min-h-screen min-w-screen font-roman justify-center">
+        <div className="flex flex-col">
+          <div className="bg-black pt-[100px] w-full p-8 lg:p-24 h-full">
+            <h1 className="uppercase font-extrabold text-beige tracking-widest text-5xl mb-4">
+              Our Bar-Catering Services
+            </h1>
+            <p className="text-white max-w-[500px] mb-20">
+              These images showcase some of the events we have had the pleasure
+              of serving, as well as the delicious drinks and impeccable service
+              that we are known for.
+            </p>
+          </div>
+          <div className="flex flex-col space-y-[150px] p-8 lg:p-24 ">
+            <div
+              id="wedding"
+              className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start 2xl:pl-40 2xl:pr-40"
+            >
               <div className="flex flex-col space-y-4 text-start lg:h-full lg:w-[50%] w-full items-center">
                 <div className="flex flex-col mb-10 lg:mb-0">
                   <h2 className="uppercase font-bold text-darkbeige tracking-wide text-start lg:text-start text-3xl">
@@ -75,12 +81,15 @@ function barcatering() {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-[450px] h-[500px] md:w-[400px] w-full border-2 border-double border-darkbeige">
+              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full border-2 border-double border-darkbeige">
                 <Slider slides={slideswedding} />
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start">
+            <div
+              id="private"
+              className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start 2xl:pl-40 2xl:pr-40"
+            >
               <div className="flex flex-col space-y-4 text-start lg:h-full lg:w-[50%] w-full items-center">
                 <div className="flex flex-col mb-10 lg:mb-0">
                   <h2 className="uppercase font-bold text-darkbeige tracking-wide text-start lg:text-start text-3xl">
@@ -109,12 +118,15 @@ function barcatering() {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-[450px] h-[500px] md:w-[400px] w-full border-2 border-double border-darkbeige">
+              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full border-2 border-double border-darkbeige">
                 <Slider slides={slidesprivate} />
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start">
+            <div
+              id="corporate"
+              className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start 2xl:pl-40 2xl:pr-40"
+            >
               <div className="flex flex-col space-y-4 text-start lg:h-full lg:w-[50%] w-full items-center">
                 <div className="flex flex-col mb-10 lg:mb-0">
                   <h2 className="uppercase font-bold text-darkbeige tracking-wide text-start lg:text-start text-3xl">
@@ -147,7 +159,7 @@ function barcatering() {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-[450px] h-[500px] md:w-[400px] w-full border-2 border-double border-darkbeige">
+              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full border-2 border-double border-darkbeige">
                 <Slider slides={slidescorporate} />
               </div>
             </div>
