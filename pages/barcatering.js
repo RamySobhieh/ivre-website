@@ -10,9 +10,9 @@ function barcatering() {
   ];
 
   const slidesprivate = [
-    { url: "https://ivrelb.com/assets/private1.jpeg", title: "private 1" },
-    { url: "https://ivrelb.com/assets/private2.jpeg", title: "private 2" },
-    { url: "https://ivrelb.com/assets/private3.JPG", title: "private 3" },
+    { url: "https://ivrelb.com/assets/private1.jpg", title: "private 1" },
+    { url: "https://ivrelb.com/assets/private2.jpg", title: "private 2" },
+    { url: "https://ivrelb.com/assets/private1.jpeg", title: "private 3" },
     { url: "https://ivrelb.com/assets/private4.jpg", title: "private 4" },
   ];
 
@@ -30,7 +30,7 @@ function barcatering() {
       title: "corporate 3",
     },
     {
-      url: "https://ivrelb.com/assets/corporate4.jpeg",
+      url: "https://ivrelb.com/assets/corporate4.jpg",
       title: "corporate 4",
     },
   ];
@@ -58,7 +58,7 @@ function barcatering() {
               <div className="flex flex-col space-y-4 text-start lg:h-full lg:w-[50%] w-full items-center">
                 <div className="flex flex-col mb-10 lg:mb-0">
                   <h2 className="uppercase font-bold text-darkbeige tracking-wide text-start lg:text-start text-3xl">
-                    Wedding Catering
+                    Wedding
                   </h2>
                   <p className="text-black text-m font-semibold mb-10 lg:mb-20 text-start lg:text-start">
                     Congratulations on your true love and best wishes! Your
@@ -93,7 +93,7 @@ function barcatering() {
               <div className="flex flex-col space-y-4 text-start lg:h-full lg:w-[50%] w-full items-center">
                 <div className="flex flex-col mb-10 lg:mb-0">
                   <h2 className="uppercase font-bold text-darkbeige tracking-wide text-start lg:text-start text-3xl">
-                    Private Parties Catering
+                    Private Parties
                   </h2>
                   <p className="text-black text-m font-semibold mb-10 lg:mb-20 text-start lg:text-start">
                     In this busy world of ours we have to cherish and joyously
@@ -130,7 +130,7 @@ function barcatering() {
               <div className="flex flex-col space-y-4 text-start lg:h-full lg:w-[50%] w-full items-center">
                 <div className="flex flex-col mb-10 lg:mb-0">
                   <h2 className="uppercase font-bold text-darkbeige tracking-wide text-start lg:text-start text-3xl">
-                    Corporate Events Catering
+                    Corporate Events
                   </h2>
                   <p className="text-black text-m font-semibold mb-10 lg:mb-20 text-start lg:text-start">
                     Your company&apos;s productivity and success are extremely
