@@ -42,13 +42,8 @@ function barcatering() {
         <div className="flex flex-col">
           <div className="bg-black pt-[100px] w-full p-8 lg:p-24 h-full">
             <h1 className="uppercase font-extrabold text-beige tracking-widest text-5xl mb-4">
-              Our Bar-Catering Services
+              Bar-Catering Services
             </h1>
-            <p className="text-white max-w-[500px] mb-20">
-              These images showcase some of the events we have had the pleasure
-              of serving, as well as the delicious drinks and impeccable service
-              that we are known for.
-            </p>
           </div>
           <div className="flex flex-col space-y-[150px] p-8 lg:p-24 ">
             <div

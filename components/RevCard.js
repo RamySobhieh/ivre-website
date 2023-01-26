@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import bottleimg from "../public/assets/bottles.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 function RevCard() {
   const { ref, inView } = useInView({
@@ -41,14 +42,14 @@ function RevCard() {
           a huge party.
         </p>
         <div className="mt-8 h-[60px] w-[150px]">
-          <a href="https://link.totersapp.com/GYJvT4WCvc4HAaK8A">
+          <Link href="/bottles">
             <button
               type="button"
-              className=" text-black border-2 border-darkbeige hover:bg-darkbeige hover:text-[#ffffff] focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold text-m px-5 py-2.5 text-center ease-in duration-150 h-full w-full uppercase"
+              className="text-black border-2 border-darkbeige hover:bg-darkbeige hover:text-[#ffffff] focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold text-m px-5 py-2.5 text-center ease-in duration-150 h-full w-full uppercase"
             >
-              Order Now
+              View More
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="xl:w-[2px] xl:h-[320px] h-[2px] w-[280px] bg-darkbeige rounded-full"></div>
