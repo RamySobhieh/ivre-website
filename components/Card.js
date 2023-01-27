@@ -39,6 +39,7 @@ function Card() {
           alt="bar image"
           layout="fill"
           objectFit="cover"
+          loading="lazy"
         ></Image>
       </motion.div>
       <div className="xl:w-[2px] xl:h-[320px] h-[2px] w-[280px] bg-darkbeige rounded-full mt-8 xl:mt-0"></div>

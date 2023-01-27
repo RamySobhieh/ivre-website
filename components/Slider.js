@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   BsChevronCompactLeft,
   BsChevronCompactRight,
@@ -26,10 +27,16 @@ function Slider({ slides }) {
 
   return (
     <div className="h-full  w-full  relative group">
-      <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl border-2 border-beige bg-center bg-cover duration-500"
-      ></div>
+      <div className="w-full h-full duration-500">
+        <Image
+          className="rounded-2xl border-2 border-beige"
+          src={slides[currentIndex].url}
+          alt="picture"
+          fill
+          objectFit="cover"
+          loading="lazy"
+        ></Image>
+      </div>
       {/* Left Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />

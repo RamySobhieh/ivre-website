@@ -1,18 +1,18 @@
 import Slider from "../components/Slider.js";
-import Navbar from "../components/Navbar2.js";
+import Navbar from "../components/Navbar3.js";
 
 function bottles() {
   const slidesbottles = [
     { url: "https://ivrelb.com/assets/toters.jpg", title: "bottles 1" },
     { url: "https://ivrelb.com/assets/bottles2.JPG", title: "bottles 2" },
     { url: "https://ivrelb.com/assets/bottles3.JPG", title: "bottles 3" },
-    { url: "https://ivrelb.com/assets/bottles5.jpeg", title: "bottles 5" },
+    { url: "https://ivrelb.com/assets/bottles4.jpeg", title: "bottles 4" },
   ];
 
   const slidesdispenser = [
-    { url: "https://ivrelb.com/assets/dispenser1.JPG", title: "Dispenser 1" },
+    { url: "https://ivrelb.com/assets/dispernser1.JPG", title: "Dispenser 1" },
     { url: "https://ivrelb.com/assets/dispenser2.JPG", title: "Dispenser 2" },
-    { url: "https://ivrelb.com/assets/dispenser1.JPG", title: "Dispenser 3" },
+    { url: "https://ivrelb.com/assets/dispenser3.JPG", title: "Dispenser 3" },
     { url: "https://ivrelb.com/assets/dispenser4.JPG", title: "Dispenser4" },
   ];
 
