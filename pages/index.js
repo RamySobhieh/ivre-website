@@ -7,6 +7,7 @@ import Sectors from "../components/Sectors";
 import Gallery from "../components/Gallery";
 import Team from "../components/Team";
 import Footer from "../components/Footer";
+import dynamic from "next/dynamic";
 
 export default function Home() {
   return (

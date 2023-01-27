@@ -1,15 +1,16 @@
 import Image from "next/image";
-import Teampic from "../public/assets/team.jpeg";
+import Teampic from "../public/assets/team1.jpeg";
 function Team() {
   return (
     <div id="about" className="scroll-mt-[-50px]">
       <div className="max-w-[1240px] flex flex-col lg:flex-row justify-center items-center lg:items-start lg:pt-[300px] pt-[150px] mb-[160px] mx-auto lg:space-x-[80px] lg:px-[80px]">
-        <div className="md:w-[400px] md:h-[300px] w-[280px] h-[210px] relative pictureshadow mb-[60px] lg:mb-0">
+        <div className="md:w-[400px] md:h-[400px] w-[280px] h-[280px] relative pictureshadow mb-[60px] lg:mb-0">
           <Image
             src={Teampic}
             alt="teampic"
             layout="fill"
             objectFit="cover"
+            loading="lazy"
           ></Image>
           <div className="bg-darkbeige w-full h-full absolute left-[-20px] top-[-20px] z-[-5] "></div>
         </div>

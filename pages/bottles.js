@@ -56,7 +56,7 @@ function bottles() {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full border-2 border-double border-darkbeige">
+              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full">
                 <Slider slides={slidesbottles} />
               </div>
             </div>
@@ -71,7 +71,7 @@ function bottles() {
                     Dispensers
                   </h2>
                   <p className="text-black text-m font-semibold mb-10 lg:mb-20 text-start lg:text-start">
-                    Introduce our alcohol dispensers, perfect for hosting
+                    Introducing our alcohol dispensers, perfect for hosting
                     parties or enjoying a drink at home. Simply fill with your
                     desired alcohol and let the dispenser do the rest. It
                     dispenses your cocktail with ease and accuracy. Stylish
@@ -91,7 +91,7 @@ function bottles() {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full border-2 border-double border-darkbeige">
+              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full">
                 <Slider slides={slidesdispenser} />
               </div>
             </div>

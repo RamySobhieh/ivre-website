@@ -1,96 +1,56 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import {
+  BsChevronCompactLeft,
+  BsChevronCompactRight,
+  BsDot,
+} from "react-icons/bs";
 
-const slideStyles = {
-  width: "100%",
-  height: "100%",
-  borderRadius: "0px",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-};
-
-const rightArrowStyles = {
-  position: "absolute",
-  top: "50%",
-  transform: "translate(0, -50%)",
-  right: "32px",
-  fontSize: "45px",
-  color: "#a28769",
-  zIndex: 1,
-  cursor: "pointer",
-};
-
-const leftArrowStyles = {
-  position: "absolute",
-  top: "50%",
-  transform: "translate(0, -50%)",
-  left: "32px",
-  fontSize: "45px",
-  color: "#a28769",
-  zIndex: 1,
-  cursor: "pointer",
-};
-
-const sliderStyles = {
-  position: "relative",
-  height: "100%",
-};
-
-const dotsContainerStyles = {
-  display: "flex",
-  justifyContent: "center",
-};
-
-const dotStyle = {
-  margin: "0 3px",
-  cursor: "pointer",
-  fontSize: "20px",
-  color: "#a28769",
-};
-
-const Slider = ({ slides }) => {
+function Slider({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const goToPrevious = () => {
+
+  const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
-  const goToNext = () => {
+
+  const nextSlide = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
-  const slideStylesWidthBackground = {
-    ...slideStyles,
-    backgroundImage: `url(${slides[currentIndex].url})`,
-  };
 
   return (
-    <div style={sliderStyles}>
-      <div>
-        <div onClick={goToPrevious} style={leftArrowStyles}>
-          ❰
-        </div>
-        <div onClick={goToNext} style={rightArrowStyles}>
-          ❱
-        </div>
+    <div className="h-full  w-full  relative group">
+      <div
+        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        className="w-full h-full rounded-2xl border-2 border-beige bg-center bg-cover duration-500"
+      ></div>
+      {/* Left Arrow */}
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
-      <div style={slideStylesWidthBackground}></div>
-      <div style={dotsContainerStyles}>
+      {/* Right Arrow */}
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <BsChevronCompactRight onClick={nextSlide} size={30} />
+      </div>
+      <div className="flex top-4 justify-center py-2">
         {slides.map((slide, slideIndex) => (
           <div
-            style={dotStyle}
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
+            className="text-2xl cursor-pointer text-darkbeige"
           >
-            ●
+            <BsDot />
           </div>
         ))}
       </div>
     </div>
   );
-};
+}
 
 export default Slider;

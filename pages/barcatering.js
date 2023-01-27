@@ -76,7 +76,7 @@ function barcatering() {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full border-2 border-double border-darkbeige">
+              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full">
                 <Slider slides={slideswedding} />
               </div>
             </div>
@@ -113,7 +113,7 @@ function barcatering() {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full border-2 border-double border-darkbeige">
+              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full">
                 <Slider slides={slidesprivate} />
               </div>
             </div>
@@ -154,7 +154,7 @@ function barcatering() {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full border-2 border-double border-darkbeige">
+              <div className="lg:w-[450px] lg:h-[500px] h-[350px] md:h-[450px]  w-full">
                 <Slider slides={slidescorporate} />
               </div>
             </div>
