@@ -32,6 +32,7 @@ function Slider({ slides }) {
           className="rounded-2xl border-2 border-beige"
           src={slides[currentIndex].url}
           alt="picture"
+          fill
           objectFit="cover"
           placeholder="blur"
         ></Image>
