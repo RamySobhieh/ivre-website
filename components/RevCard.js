@@ -62,7 +62,7 @@ function RevCard() {
           alt="bar image"
           layout="fill"
           objectFit="cover"
-          loading="lazy"
+          placeholder="blur"
         ></Image>
       </motion.div>
     </div>

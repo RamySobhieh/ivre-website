@@ -25,7 +25,8 @@ function Main() {
         layout="fill"
         objectFit="cover"
         objectPosition="center"
-        loading="eager"
+        placeholder="blur"
+        priority
       ></Image>
       <div className="absolute left:0 top:0 w-full h-screen bg-black/[0.4]"></div>
       <div className="max-w-[1240px] w-full h-full mx-auto p-4 relative">

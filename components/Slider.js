@@ -33,8 +33,7 @@ function Slider({ slides }) {
           src={slides[currentIndex].url}
           alt="picture"
           fill
-          objectFit="cover"
-          loading="lazy"
+          placeholder="blur"
         ></Image>
       </div>
       {/* Left Arrow */}

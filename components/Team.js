@@ -10,7 +10,7 @@ function Team() {
             alt="teampic"
             layout="fill"
             objectFit="cover"
-            loading="lazy"
+            placeholder="blur"
           ></Image>
           <div className="bg-darkbeige w-full h-full absolute left-[-20px] top-[-20px] z-[-5] "></div>
         </div>
