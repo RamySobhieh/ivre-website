@@ -33,7 +33,6 @@ function Slider({ slides }) {
           src={slides[currentIndex].url}
           alt="picture"
           objectFit="cover"
-          objectPosition="center"
           placeholder="blur"
         ></Image>
       </div>
